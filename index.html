@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximo's Seguros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col col-md-8 mr-md-auto ml-md-auto" >
+            <div id="contenido">
+                  <header>
+                     <h1 class="text-center">Cotiza el seguro de tu Auto</h1>
+                  </header>
+                  <div class="row contenido-formulario">
+                      <div class="col col-md-10 mr-md-auto ml-md-auto">
+                        <form action="#" id="cotizar-seguro">
+                          <div class="form-group">
+                             <label for="marca">Marca:</label>
+                             <select class="form-control" id="marca">
+                               <option value="">- Seleccionar -</option>
+                               <option value="1">Ferrari</option>
+                              <option value="2">Mercedes</option>
+                              <option value="3">Audi</option>
+                              <option value="4">Lamborghini</option>
+                              <option value="5">Bmw</option>
+                              <option value="6">Ford</option>
+                            </select>
+                         </div>
+                                      <div class="form-group">
+                                              <label for="anio">Año:</label>
+                                              <select class="form-control" id="anio">
+                                                  
+                                              </select>
+                                      </div>
+                                      <fieldset class="form-group">
+                                          <div class="row">
+                                               <legend class="col-form-legend col-12">Tipo Seguro</legend>
+      
+                                            <div class="col12">
+                                                <div class="form-check">
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="tipo" value="basico" checked>
+                                                    Básico
+                                                  </label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="tipo" value="completo">
+                                                    Completo
+                                                  </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </fieldset>
+      
+                                <div id="cargando">
+                                    <img src="img/spinner.gif">
+                                </div>
+                                <div id="resultado"></div>
+                                <div class="form-group">
+                                        <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                                        </button>
+                                </div>
+                        </form> 
+                      </div>
+                </div>
+            </div> <!--#contenido-->
+          </div>
+        </div>
+    </div>
+      
+    <script src="main.js"></script>
+</body>
+</html>
