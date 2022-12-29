@@ -77,7 +77,7 @@ Interfaz.prototype.mostarMensaje = function(mensaje, tipo) {
   }, 2000);
 };
 
-//imprime resultado de cotización
+//muestra el resultado de la cotización
 Interfaz.prototype.mostrarResultado = function (seguro, total) {
     const resultado = document.getElementById('resultado');
     let marca;
@@ -105,7 +105,7 @@ Interfaz.prototype.mostrarResultado = function (seguro, total) {
 
     //crear un div
     const div = document.createElement('div');
-    //insertar la información
+    //muestra la información
     div.innerHTML = `
        <p class="header">Tu resumen:</p>
        <p>Marca: ${marca}</p>
@@ -123,7 +123,7 @@ Interfaz.prototype.mostrarResultado = function (seguro, total) {
     
 }
 
-//capturar datops del formulario
+//capturar los datos del formulario
 const formulario = document.getElementById('cotizar-seguro');
 
 formulario.addEventListener('submit', function (e) {
@@ -144,7 +144,7 @@ formulario.addEventListener('submit', function (e) {
     //revisamos que los campos no estén vacíos
 
     if (marcaSeleccionada === '' || anioSeleccionado === '' || tipo === '') {
-        //interfaz imprimiendo error
+        //interfaz mostrando el error
         interfaz.mostarMensaje('Faltan Datos, revisa e intenta de nuevo', 'error');
     } else {
         //limpiar resultados anteriores
